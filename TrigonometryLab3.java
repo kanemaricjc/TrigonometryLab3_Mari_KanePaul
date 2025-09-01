@@ -91,7 +91,6 @@ public class TrigonometryLab3 {
                     String signoftan = null; // same ra sa gibuhat nato sa quadrant, we are using string para mas musayon.
             switch (quadrant) {
                 case "Quadrant 1.":
-                    //originally mag gamit unta kog "quadrant==("Quadrant 1.")" para depende sa kung unsa ang output sa quadrant pero nag recommend ang IDE na i quadrant.equals daw so mao nalang akong gigamit
                     signofsin = "positive.";
                     signofcos = "positive.";
                     signoftan = "positive.";
@@ -113,25 +112,25 @@ public class TrigonometryLab3 {
                     signoftan = "negative.";
                     break;
                 case "the positive x-axis.":
-                    //para ani sa ila gi check nako gamit 89, 91, 181, and 359 respectively to check for signs for quadrant 1, 2, 3, and 4.
+                    //if normalized angle = 0
                     signofsin = "no sign(0).";
                     signofcos = "positive.";
                     signoftan = "no sign(0).";
                     break;
                 case "the positive y-axis.":
-                    //para ani sa ila gi check nako gamit 89, 91, 181, and 359 respectively to check for signs for quadrant 1, 2, 3, and 4.
+                    //if normalized angle = 90
                     signofsin = "positive.";
                     signofcos = "no sign(0)."; 
                     signoftan = "undefined.";
                     break;
                 case "the negative x-axis.":
-                    //para ani sa ila gi check nako gamit 89, 91, 181, and 359 respectively to check for signs for quadrant 1, 2, 3, and 4.
+                    //if normalized angle = 180
                     signofsin = "no sign(0).";
                     signofcos = "negative.";
                     signoftan = "no sign(0).";
                     break;
                 case "the negative y-axis.":
-                    //para ani sa ila gi check nako gamit 89, 91, 181, and 359 respectively to check for signs for quadrant 1, 2, 3, and 4.
+                    //if normalized angle = 270
                     signofsin = "negative.";
                     signofcos = "no sign(0).";
                     signoftan = "Undefined.";
@@ -474,4 +473,5 @@ public class TrigonometryLab3 {
             
         input.close();
       }   
+
 }
