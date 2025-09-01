@@ -77,13 +77,13 @@ public class TrigonometryLab3 {
                         quadrant="Quadrant 3.";
                     } else if (normalization > 270 && normalization < 360) { //angles that lie on quadrant 4 ranges from 271-359
                         quadrant="Quadrant 4.";
-                    } else if ( normalization == 0 ) { //angles that lie on quadrant 4 ranges from 271-359
+                    } else if ( normalization == 0 ) { //angles that lie on the positive x-axis
                         quadrant="the positive x-axis.";
-                    } else if ( normalization == 90 ) { //angles that lie on quadrant 4 ranges from 271-359
+                    } else if ( normalization == 90 ) { //angles that lie on the positive y-axis
                         quadrant="the positive y-axis.";
-                    } else if ( normalization ==180 ) { //angles that lie on quadrant 4 ranges from 271-359
+                    } else if ( normalization == 180 ) { //angles that lie on the negative x-axis
                         quadrant="the negative x-axis.";
-                    } else if ( normalization == 270 ) { //angles that lie on quadrant 4 ranges from 271-359
+                    } else if ( normalization == 270 ) { //angles that lie on the negative y-axis
                         quadrant="the negative y-axis.";
                     }             
                     String signofsin = null;
@@ -475,3 +475,4 @@ public class TrigonometryLab3 {
       }   
 
 }
+
