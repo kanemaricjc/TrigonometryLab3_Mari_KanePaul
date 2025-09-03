@@ -57,7 +57,6 @@ public class TrigonometryLab3 {
                     
                     
             System.out.println("Problem 2: Angle Quadrant Detector");
-        try {    
             System.out.println("Please input an angle in degrees.");
             double angle2=input.nextDouble();
                 
@@ -142,11 +141,7 @@ public class TrigonometryLab3 {
                         System.out.println("The angle " + angle2 + " in degrees lies on " + quadrant); //we are now printing the results for everything sa problem 2
                         System.out.println("Its sign in sine is: " + signofsin);
                         System.out.println("Its sign in cosine is: " + signofcos);
-                        System.out.println("Its sign in tangent is: " + signoftan);
-        } catch (InputMismatchException e) {
-            System.out.println("Please use numbers for the values.");
-            input.nextLine();
-        }            
+                        System.out.println("Its sign in tangent is: " + signoftan);           
                      
         
                         //Critical Thinking Questions
@@ -160,7 +155,6 @@ public class TrigonometryLab3 {
                      
                     
             System.out.println("Problem 3: Right Triangle Solver");
-            try {
             System.out.println("What elements are present in the right triangle?");
             System.out.println("1. Two sides.");
             System.out.println("2. One side and an angle.");
@@ -317,12 +311,7 @@ public class TrigonometryLab3 {
                 System.out.println("Angle A: " + angleA);
                 System.out.println("Angle B: " + angleB);
                 System.out.println("Angle C: " + angleC);
-                System.out.println("Area: " + areaofrighttriangle); 
-                       
-            } catch (InputMismatchException e) {
-                System.out.println("Please input numbers for the angles and lengths.");
-                input.nextLine();
-            } 
+                System.out.println("Area: " + areaofrighttriangle);  
             
             
                         //Critical Thinking Questions
@@ -336,7 +325,6 @@ public class TrigonometryLab3 {
                     
             
             System.out.println("Problem 4: Trigonometric Identity Verifier");
-            try {
                 System.out.println("Please input an angle in degrees.");
                 double trigangle=input.nextDouble();
                 
@@ -388,10 +376,6 @@ public class TrigonometryLab3 {
                                 System.out.printf("False (the difference is %.15f)\n", difference3);
                             }
                         //basically ang gibuhat nako sa 3 ka identities kay gi tagaan nakog iyahang variable for each identities' left side and right side respectively.
-            } catch (InputMismatchException e) {
-                System.out.println("Please use numbers for the values.");
-                input.nextLine();
-            }
             
             
                         //Critical Thinking Questions
@@ -405,7 +389,6 @@ public class TrigonometryLab3 {
             
             
             System.out.println("Problem 5: Wave Properties Analyzer");
-            try {
                 System.out.println("Please input amplitude(A) of the wave.");
                 double amplitude = input.nextDouble();
                 
@@ -454,11 +437,6 @@ public class TrigonometryLab3 {
                 double nextpeaktime = (nextpeakargument + ( 2 * PI * (currentpeakcycle + 1 ) ) - phaseshiftRadians );
                 
                 System.out.printf("The next time the wave will reach a peak is t = %.4f\n", nextpeaktime);
-                
-            } catch (InputMismatchException e) {
-                System.out.println("Please use numbers for the values.");
-                input.nextLine();
-            }
             
             
                         //Critical Thinking Questions
@@ -475,4 +453,5 @@ public class TrigonometryLab3 {
       }   
 
 }
+
 
